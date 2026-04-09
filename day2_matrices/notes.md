@@ -299,6 +299,14 @@ np.linalg.inv(A)
 ⚠️ Important
 👉 det(A) = 0 → inverse NOT possible
 
+## 🧠 Final Understanding
 
+Matrix = data + transformation system
+
+Flow:
+Vector → Matrix → Transformation → Output
+
+In ML:
+Input → Weights → Prediction
 
 
