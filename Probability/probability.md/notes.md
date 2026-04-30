@@ -1,6 +1,6 @@
 # PROBABILITY BASICS
-👉 Probability = “The likelihood of a specific event occurring”
-💡Explanation: If something has the potential to happen in the future, we refer to the "chance" of it happening as probability.
+Probability = The chance of an event occurring.
+If something has the potential to happen in the future, we refer to the "chance" of it happening as probability.
 
 ## 👉 The value is always:
 0 = Impossible ❌  , 1 = Certain to happen ✅
@@ -91,8 +91,9 @@ dog = 0.2
 👉 Probability = chance
 👉Conditional Probability = the probability of an event occurring when a certain condition is already true.
 
-## 💡 difference ( one question but difference)
-👉 Notice the difference in normal and conditional probability . In normal pb we take full space and other hand In conditional pb We are no longer considering the entire sample space. We are focusing solely on the part that satisfies the given condition.
+## 💡 difference 
+👉 Normal: full sample space
+👉 Conditional: reduced sample space
 
 ### 👉 Normal Probability:
 “What is the probability of rolling a 6?”
@@ -108,7 +109,7 @@ dog = 0.2
 
 Normal Question: 👉 Probability of picking a Red ball = 3/5
 
-Conditional Question: 👉 “If the ball picked is definitely RED, what is the probability that it is a *dark* red?”
+Conditional Question: 👉 If ball is RED, what is probability of picking a specific red ball?
 👉 Now, we are looking only within the set of RED balls.
 
 ## ❓ Why does this exist?
@@ -119,7 +120,7 @@ In the real world, we are constantly receiving new information:
 👉 The probability changes once new information becomes available.👉 This is precisely what is known as Conditional Probability.
 
 ## FORMULA
-P(A \ B) = {P(A ∩ B)}/{P(B)}
+P(A | B) = {P(A ∩ B)}/{P(B)}
 
 ### 🔍Terms Explained
 P(A | B) → probability of A given B
@@ -175,8 +176,7 @@ divide = probability
 ## AI CONNECTION🤖
 👉 Spam detection:“If the email contains the word ‘FREE’, what is the probability of it being spam?” 👉 This is conditional probability!
 
-## Summary
-Conditional probability = updated probability after knowing something
+
 
 ## 🔑 Key Points
 The sample space has changed due to condition.
@@ -203,9 +203,7 @@ How rare is the disease?
 👉 Bayes combines all of these factors.
 
 ## FORMULA
-P(A\B) = { P(B\A). P(A) }
-          --------------
-              {P(B)}
+P(A | B) = (P(B | A) * P(A)) / P(B)
 
 🔍Terms Explained
 P(A|B) → final answer (after knowing B)
@@ -240,20 +238,8 @@ P(A)=0.2, P(B|A)=0.5, P(B)=0.25                 ✅ Answers=0.4
 P(A)=0.5, P(B|A)=0.8, P(B)=0.4                  ✅ Answers = 1.0
 P(A)=0.1, P(B|A)=0.9, P(B)=0.3                  ✅ Answers=0.3
 P(A)=0.3, P(B|A)=0.6, P(B)=0.5                  ✅ Answers=0.36
-P(A)=0.4, P(B|A)=0.7, P(B)=0.2                  ✅ Answers=1.4
+P(A)=0.4, P(B|A)=0.7, P(B)=0.2                  ✅ Answers=1.4⚠️ If answer > 1 → invalid inputs
 
-```python # Bayes theorem
-P_A = 0.01
-P_B_given_A = 0.99
-P_B = 0.05
-P_A_given_B = (P_B_given_A * P_A) / P_B
-print("Final Probability:", P_A_given_B)
-```
-🧠Explanation code 
-stored values
-multiply
-divide
-printing
 
 ```python 
 # Bayes Theorem Example
@@ -279,8 +265,6 @@ print("Probability of Disease given Positive:", P_D_given_P)
      prior probability
 👉 Gmail uses this technology 🔥
 
-##SUMMARY
-Bayes = updating probability after new information
 
 ## 🔑 Key Points
 extension of conditional probability
@@ -288,3 +272,6 @@ Prior → Posterior
 super important in AI
 
 
+## Summary
+Conditional probability = updated probability after knowing something
+Bayes = updating probability after new information

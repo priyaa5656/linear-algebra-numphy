@@ -153,3 +153,4 @@ Derivative → slope
 Partial → one direction  
 Gradient → all directions  
 Gradient Descent → minimum find
+
